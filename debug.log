@@ -1,0 +1,2 @@
+[1120/021521.427:ERROR:crash_report_database_win.cc(569)] CreateDirectory C:\Users\afrere\AppData\Local\Temp\karma-63781762\Crashpad: Le chemin d’accès spécifié est introuvable. (0x3)
+[1120/023949.581:ERROR:crash_report_database_win.cc(569)] CreateDirectory C:\Users\afrere\AppData\Local\Temp\karma-26009808\Crashpad: Le chemin d’accès spécifié est introuvable. (0x3)

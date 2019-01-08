@@ -1,0 +1,9 @@
+<div class="message-thread__container" [ngClass]="{'message-thread__container--shift-left' :chatBoxIsSender }">
+  <span class="message-thread__sender-name" *ngIf="!chatBoxIsSender">{{inputThread.sender}} say</span>
+  <span class="message-thread__sender-name" *ngIf="chatBoxIsSender">You say</span>
+
+  <ul class="message-thread__bubble" [ngClass]="{'message-thread__bubble--sender' : chatBoxIsSender, 
+'message-thread__bubble--not-sender' : !chatBoxIsSender  }">
+    <li *ngFor="let message of inputThread.thread">{{message}}</li>
+  </ul>
+</div>

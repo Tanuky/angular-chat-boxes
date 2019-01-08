@@ -1,0 +1,42 @@
+.message-thread {
+  
+    &__container {
+        padding: 8px;
+        margin-right: 24px;
+
+        &--shift-left {
+            @extend .message-thread__container;
+            margin-right: 0;
+            margin-left: 24px;
+
+        }
+    }
+
+    &__sender-name {
+        font-weight: 400;
+    }
+
+
+    &__bubble {
+        border-radius: 25px;
+        margin-bottom: 8px;
+        &--sender {
+            @extend .message-thread__bubble;
+            background-color: lightgrey;
+            text-align: right;
+        }
+        &--not-sender {
+            @extend .message-thread__bubble;
+            background-color: lightskyblue;
+        }
+        li {
+            padding: 0 10px;
+            &:first-child {
+                padding-top: 8px;
+            }
+            &:last-child {
+                padding-bottom: 8px;
+            }
+        }
+    }
+}

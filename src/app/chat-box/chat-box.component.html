@@ -1,0 +1,14 @@
+<div class="container-fluid chat-box__layout">
+	<h2 class="chat-box__header">{{chatBoxName}}</h2>
+	<div class="chat-box__content">
+		<ul>
+			<li *ngFor="let thread of messageList">
+				<app-message-thread-display [inputThread]="thread" [chatBoxIsSender]="thread.sender === chatBoxName"></app-message-thread-display>
+			</li>
+		</ul>
+	</div>
+	<div class="chat-box__footer">
+		<textarea [(ngModel)]="chatInput" (keyup.enter)="sendMessage()" rows="2" cols="30"></textarea>
+		<button (click)="sendMessage()" class="chat-box__send-button">Send</button>
+	</div>
+</div>
